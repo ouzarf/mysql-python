@@ -21,12 +21,12 @@ cnx = mysql.connector.connect(user='root', password='',
                               database='menu')
 
 
-# Use all the SQL you like
+### Use all the SQL you like
 cur = cnx.cursor()
 cur.execute("SELECT * FROM fish")
-## fetch the first table fish
+### fetch the first table fish
 for row in cur.fetchall():
-## print all the first cell of all the rows
+### print all the first cell of all the rows
     print(row[0],row[1],row[2])
 
 cnx.close()
