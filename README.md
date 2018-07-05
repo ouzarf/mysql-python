@@ -23,6 +23,7 @@ cnx = mysql.connector.connect(user='root', password='',
 
 ### Use all the SQL you like
 cur = cnx.cursor()
+### execute  the SQL 
 cur.execute("SELECT * FROM fish")
 ### fetch the first table fish
 for row in cur.fetchall():
